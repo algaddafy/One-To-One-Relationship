@@ -24,6 +24,7 @@ class CustomerController extends Controller
     public function show_mobile($id)
     {
         $mobile = Customer::find($id)->mobile;
-        return $mobile;
+        // return $mobile;
+        return view('mobile', ['model'=>$mobile]);
     }
 }
