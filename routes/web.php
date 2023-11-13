@@ -9,3 +9,5 @@ Route::get('/', function () {
 
 Route::get('/add-customer', [CustomerController::class,'add_customer']);
 Route::get('/show-mobile/{id}', [CustomerController::class,'show_mobile']);
+
+Route::get('/show-customer/{id}', [CustomerController::class,'show_customer']);
